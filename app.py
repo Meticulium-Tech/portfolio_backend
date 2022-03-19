@@ -15,6 +15,8 @@ def index():
         Book("The corporate World", "world.jpeg", "lorem ipsum dolor"),
         Book("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
         Book("Power of Association", "association.jpeg", "lorem ipsum dolor"),
+        Book("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
+        Book("Power of Association", "association.jpeg", "lorem ipsum dolor"),
     ]
     offered_services = [
         Service("Team Relationship building", "This Training brings to the underline understanding of teams the importance of little droplets of energies that can illuminate productivity. Best for already established Brands to better ensure team growth for productivity", "icon flaticon-writing"),
