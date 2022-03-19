@@ -5,3 +5,4 @@ for file in *
         git push
     done
 
+    
