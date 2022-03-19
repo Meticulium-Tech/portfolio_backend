@@ -682,15 +682,14 @@
                                         <div class="inner-box">
                                             <img
                                             alt="Baby boom"
-                                            src="../static/images/{{book[1]}}"
+                                            src="../static/images/{{book.img}}"
                                             
                                           />
                                             <div class="title-box">
                                                 <span class="icon flaticon-writing"></span>
-                                                <h3 class='book_name'>{{book[0]}}</h3>
+                                                <h3 class='book_name'>{{book.name}}</h3>
                                             </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
+                                            <div class="text">{{book.desc}}</div>
                                         </div>
                                     </div>
                                     {% endfor %}
