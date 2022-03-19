@@ -201,148 +201,24 @@
 
                                             <!--Progress-->
                                             <div class="progress-bars row">
+                                                {% for skill in skills %}
                                                 <div class="bar-item col-lg-6 col-md-6 col-sm-12">
                                                     <div class="skill-header">
-                                                        <div class="skill-title">🏅 Brand Therapist</div>
+                                                        <div class="skill-title">🏅 {{skill.name }}</div>
                                                     </div>
                                                     <div class="skill-bar">
                                                         <div class="bar-inner">
                                                             <div class="bar progress-line" data-width="100">
                                                                 <div class="skill-percentage">
                                                                     <div class="count-box"><span class="count-text"
-                                                                            data-speed="2000" data-stop="100">0</span>%
+                                                                            data-speed="2000" data-stop="{{skill.level}}">{{skill.level}}</span>%
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header">
-                                                        <div class="skill-title">C</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="80">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="2000" data-stop="80">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header">
-                                                        <div class="skill-title">C++</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="70">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="2000" data-stop="70">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header">
-                                                        <div class="skill-title">JAVASCRIPT</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="35">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="1700" data-stop="35">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header">
-                                                        <div class="skill-title">CSS</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="30">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="1500" data-stop="30">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header clearfix">
-                                                        <div class="skill-title">PYTHON</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="60">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="2800" data-stop="60">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header">
-                                                        <div class="skill-title">BASH</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="25">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="2800" data-stop="25">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!--Skill Item-->
-                                                <div class="bar-item col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="skill-header clearfix">
-                                                        <div class="skill-title">SQL</div>
-                                                    </div>
-                                                    <div class="skill-bar">
-                                                        <div class="bar-inner">
-                                                            <div class="bar progress-line" data-width="30">
-                                                                <div class="skill-percentage">
-                                                                    <div class="count-box"><span class="count-text"
-                                                                            data-speed="2500" data-stop="30">0</span>%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                {% endfor %}
 
 
                                             </div>
