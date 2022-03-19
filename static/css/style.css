@@ -207,9 +207,8 @@ ul,li{
 }
 .service_title{
 	color: #FCC200;
-	font-size: 18px;
 	font-weight: normal;
-	font-family: Hendrickson;
+	font-family: Bulgatti;
 }
 .button {
 	border-radius: 5px;
@@ -395,7 +394,7 @@ ul,li{
 	color: #FCC200;
 	font-size: 50px;
 	font-weight: normal;
-	font-family: Hendrickson;
+	font-family: Bulgatti;
 }
 .btn-style-one:hover .btn-title{
 	background-color: #ffffff;
