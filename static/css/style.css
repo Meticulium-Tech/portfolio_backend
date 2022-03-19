@@ -207,7 +207,7 @@ ul,li{
 }
 .service_title{
 	color: #FCC200;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: normal;
 	font-family: Hendrickson;
 }
@@ -395,7 +395,7 @@ ul,li{
 	color: #FCC200;
 	font-size: 50px;
 	font-weight: normal;
-	font-family: Bulgatti;
+	font-family: Hendrickson;
 }
 .btn-style-one:hover .btn-title{
 	background-color: #ffffff;
