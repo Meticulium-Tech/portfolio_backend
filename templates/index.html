@@ -460,9 +460,10 @@
                                     <span class="title">ABOUT ME</span>
                                     <h2>My Services & Skills</h2>
                                 </div>
-                                {% for service in services %}
+                                
                                 <div class="row masonry-items-container">
                                     <!-- Services Block -->
+                                    {% for service in services %}
                                     <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
                                         <div class="inner-box">
                                             <div class="floating-text">{{service.name}}</div>
@@ -473,8 +474,9 @@
                                             <div class="text">{{service.desc}}</div>
                                         </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
-                                {% endfor %}
+                              
                             </div>
                         </div>
                     </div>
