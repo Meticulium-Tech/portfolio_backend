@@ -207,9 +207,9 @@ ul,li{
 }
 .service_title{
 	color: #FCC200;
-	font-weight: bold;
+	padding: 10px 30px 10px 0px;
+	font-weight: normal;
 	font-size: 22px;
-	margin: auto;
 	font-family: Bulgatti;
 }
 .button {
@@ -2428,8 +2428,11 @@ img{
 
 .service-block .inner-box{
 	position: relative;
+	cursor: pointer;
 	background-color: #f1f6ef;
-	padding: 5px 30px 25px;
+	border-radius: 10px;
+	border: 4px solid #FCC200;
+	padding: 5px 30px 25px 30px;
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(0,0,0,.10);
 	-webkit-transition: all 500ms ease;
@@ -2440,7 +2443,7 @@ img{
 }
 
 .service-block .inner-box:hover{
-	background-color: #221C33;
+	background-color: #1c2005;
 }
 
 .service-block .floating-text{
