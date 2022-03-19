@@ -205,6 +205,12 @@ ul,li{
 	font-weight: normal;
 	font-family: Bulgatti;
 }
+.service_title{
+	color: #FCC200;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Hendrickson;
+}
 .button {
 	border-radius: 5px;
     position: relative;
