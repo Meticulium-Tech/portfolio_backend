@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from models.book import Book
 from models.service import Service
 
 from models.skill import Skill
@@ -10,10 +11,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     writen_books = [
-        ("Daily Business Quotes", "daily-quotes.jpeg", "lorem ipsum dolor"),
-        ("The corporate World", "world.jpeg", "lorem ipsum dolor"),
-        ("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
-        ("Power of Association", "association.jpeg", "lorem ipsum dolor"),
+        Book("Daily Business Quotes", "daily-quotes.jpeg", "lorem ipsum dolor"),
+        Book("The corporate World", "world.jpeg", "lorem ipsum dolor"),
+        Book("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
+        Book("Power of Association", "association.jpeg", "lorem ipsum dolor"),
     ]
     offered_services = [
         Service("Team Relationship building", "This Training brings to the underline understanding of teams the importance of little droplets of energies that can illuminate productivity. Best for already established Brands to better ensure team growth for productivity", "icon flaticon-writing"),
