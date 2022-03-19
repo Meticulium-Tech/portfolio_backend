@@ -34,7 +34,7 @@ def index():
         Skill("Keynote Speaker", 100),
         
     ]
-    return render_template('index.html', books=writen_books, services=offered_services)
+    return render_template('index.html', books=writen_books, services=offered_services, skills=top_skills)
 
 
 @app.route('/symbol.html')
