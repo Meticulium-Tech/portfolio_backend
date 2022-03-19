@@ -460,83 +460,21 @@
                                     <span class="title">ABOUT ME</span>
                                     <h2>My Services & Skills</h2>
                                 </div>
+                                {{% for service in services %}}
                                 <div class="row masonry-items-container">
                                     <!-- Services Block -->
                                     <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
                                         <div class="inner-box">
-                                            <div class="floating-text">CODING</div>
+                                            <div class="floating-text">{{service.name}}</div>
                                             <div class="title-box">
                                                 <span class="icon flaticon-writing"></span>
-                                                <h3>CODING</h3>
+                                                <h3>{{service.name}}</h3>
                                             </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
-                                        </div>
-                                    </div>
-                                    <!-- Services Block -->
-                                    <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
-                                        <div class="inner-box">
-                                            <div class="floating-text">scripting</div>
-                                            <div class="title-box">
-                                                <span class="icon flaticon-focus-1"></span>
-                                                <h3>SCRIPTING</h3>
-                                            </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
-                                        </div>
-                                    </div>
-                                    <!-- Services Block -->
-                                    <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
-                                        <div class="inner-box">
-                                            <div class="floating-text">HACKING</div>
-                                            <div class="title-box">
-                                                <span class="icon flaticon-programming"></span>
-                                                <h3>ETHICAL HACKING</h3>
-                                            </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Services Block -->
-                                    <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
-                                        <div class="inner-box">
-                                            <div class="floating-text">BOTDEV</div>
-                                            <div class="title-box">
-                                                <span class="icon flaticon-edit-tools"></span>
-                                                <h3>BOT DEVELOPMENT</h3>
-                                            </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Services Block -->
-                                    <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
-                                        <div class="inner-box">
-                                            <div class="floating-text">PENTESTING</div>
-                                            <div class="title-box">
-                                                <span class="icon flaticon-megaphone-1"></span>
-                                                <h3>PENETRATION TESTING</h3>
-                                            </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Services Block -->
-                                    <div class="service-block masonry-item col-lg-4 col-md-6 col-sm-12">
-                                        <div class="inner-box">
-                                            <div class="floating-text">NETWORKING</div>
-                                            <div class="title-box">
-                                                <span class="icon flaticon-analytics"></span>
-                                                <h3>NETWORKING</h3>
-                                            </div>
-                                            <div class="text">A full stack allaround designer that may or may not
-                                                include a guide.</div>
+                                            <div class="text">{{service.desc}}</div>
                                         </div>
                                     </div>
                                 </div>
+                                {{% endfor %}}
                             </div>
                         </div>
                     </div>
