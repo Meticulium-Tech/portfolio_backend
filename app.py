@@ -11,12 +11,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     writen_books = [
-        Book("Daily Business Quotes", "daily-quotes.jpeg", "lorem ipsum dolor"),
-        Book("The corporate World", "world.jpeg", "lorem ipsum dolor"),
-        Book("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
-        Book("Power of Association", "association.jpeg", "lorem ipsum dolor"),
-        Book("The Baby Genius", "baby.jpeg", "lorem ipsum dolor"),
-        Book("Power of Association", "association.jpeg", "lorem ipsum dolor"),
+        Book("Daily Business Quotes", "quote-book.png", "lorem ipsum dolor"),
+        Book("Power of Association", "power-ass.png", "lorem ipsum dolor"),
+        Book("The Baby Genius", "baby-genius.png", "lorem ipsum dolor"),
+        Book("Power of Association", "power-ass.png", "lorem ipsum dolor"),
+        Book("Daily Business Quotes", "quote-book.png", "lorem ipsum dolor"),
+        Book("The Baby Genius", "baby-genius.png", "lorem ipsum dolor"),
     ]
     offered_services = [
         Service("Team Relationship building", "This Training brings to the underline understanding of teams the importance of little droplets of energies that can illuminate productivity. Best for already established Brands to better ensure team growth for productivity", "icon flaticon-writing"),
