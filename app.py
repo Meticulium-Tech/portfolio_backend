@@ -40,9 +40,9 @@ def index():
     return render_template('index.html', books=writen_books, services=offered_services, skills=top_skills)
 
 
-@app.route('/symbol.html')
-def symbol():
-    return render_template('symbol.html', the_title='Tiger As Symbol')
+@app.route('/post')
+def post():
+    return render_template('post.html', the_title='Tiger As Symbol')
 
 
 @app.route('/myth.html')
