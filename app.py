@@ -67,7 +67,7 @@ def handle(distance):
     
     if(request.method == 'GET'):
         webbrowser.open("www.baimamboukar.me")
-        return "Well received: " + distance
+        return "Well received: "
 
 
 if __name__ == '__main__':
