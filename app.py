@@ -51,7 +51,7 @@ def post():
 def arduino():
     if(request.method == 'POST'):
         return render_template('post.html')
-    return {"Hello": "World"}
+    return "Hello Mboa waste"
 
 
 if __name__ == '__main__':
