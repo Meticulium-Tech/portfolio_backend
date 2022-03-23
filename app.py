@@ -60,10 +60,10 @@ def arduino(distance):
     
     
 @app.route('/arduino/', methods = ['POST', 'GET'])
-def handle(distance):
+def handle():
     if(request.method == 'POST'):
         webbrowser.open("www.baimamboukar.me")
-        return "Well received: " + distance
+        return "Well received: "
     
     if(request.method == 'GET'):
         webbrowser.open("www.baimamboukar.me")
