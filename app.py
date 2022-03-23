@@ -50,7 +50,7 @@ def post():
 @app.route('/arduino', methods = ['POST', 'GET'])
 def arduino():
     if(request.method == 'POST'):
-        return render_template('post.html')
+        return "Well received"
     return  "Hello Mboabin"
 
 
