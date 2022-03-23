@@ -53,7 +53,10 @@ def arduino(distance):
     if(request.method == 'POST'):
         webbrowser.open("www.baimamboukar.me")
         return "Well received: " + distance
-    return  "Hello Mboabin"
+    
+    if(request.method == 'GET'):
+        webbrowser.open("www.baimamboukar.me")
+        return "Well received: " + distance
 
 
 if __name__ == '__main__':
