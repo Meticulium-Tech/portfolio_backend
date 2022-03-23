@@ -1,5 +1,6 @@
 from flask import Flask, Response, render_template, request
 from models.book import Book
+import webbrowser
 from models.service import Service
 
 from models.skill import Skill
@@ -50,6 +51,7 @@ def post():
 @app.route('/arduino', methods = ['POST', 'GET'])
 def arduino():
     if(request.method == 'POST'):
+        webbrowser.open("www.baimamboukar.me")
         return "Well received"
     return  "Hello Mboabin"
 
