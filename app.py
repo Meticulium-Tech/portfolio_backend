@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, Response, render_template, request
 from models.book import Book
 from models.service import Service
 
@@ -51,7 +51,7 @@ def post():
 def arduino():
     if(request.method == 'POST'):
         return render_template('post.html')
-    return "Hello Mboa waste"
+    return  "Hello Mboabin"
 
 
 if __name__ == '__main__':
