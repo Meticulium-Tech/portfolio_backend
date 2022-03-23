@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from models.book import Book
 from models.service import Service
 
@@ -37,6 +37,8 @@ def index():
         Skill("Keynote Speaker", 100),
         
     ]
+    
+    education = []
     return render_template('index.html', books=writen_books, services=offered_services, skills=top_skills)
 
 
@@ -45,9 +47,11 @@ def post():
     return render_template('post.html', the_title='Tiger As Symbol')
 
 
-@app.route('/myth.html')
-def myth():
-    return render_template('myth.html', the_title='Tiger in Myth and Legend')
+@app.route('/arduino', methods = ['POST', 'GET'])
+def arduino():
+    if(request.method == 'POST'):
+        return render_template('post.html')
+    return {"Hello": "World"}
 
 
 if __name__ == '__main__':
