@@ -48,11 +48,11 @@ def post():
     return render_template('post.html', the_title='Tiger As Symbol')
 
 
-@app.route('/arduino', methods = ['POST', 'GET'])
-def arduino():
+@app.route('/arduino/<distance>', methods = ['POST', 'GET'])
+def arduino(distance):
     if(request.method == 'POST'):
         webbrowser.open("www.baimamboukar.me")
-        return "Well received"
+        return "Well received: " + distance
     return  "Hello Mboabin"
 
 
