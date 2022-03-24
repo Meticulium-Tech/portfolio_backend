@@ -1,6 +1,7 @@
 from flask import Flask, Response, render_template, request
 from models.book import Book
 import webbrowser
+from models.magazine import Magazine
 from models.service import Service
 
 from models.skill import Skill
@@ -37,7 +38,13 @@ def index():
     ]
     
     education = []
-    return render_template('index.html', books=writen_books, services=offered_services, skills=top_skills)
+    mags = [
+        Magazine("Nest Mag show", "22/10/2022", "Mofor Cendoh","https://publuu.com/flip-book/20181/63800/page/1?cover", "https://g2.publuu.com/cover.php?iid=63800&pid=20181&page=1&time=1648154058"),
+          Magazine("Nest Mag show", "22/10/2022", "Mofor Cendoh","https://publuu.com/flip-book/20181/63800/page/1?cover", "https://g2.publuu.com/cover.php?iid=63800&pid=20181&page=1&time=1648154058"),
+            Magazine("Nest Mag show", "22/10/2022", "Mofor Cendoh","https://publuu.com/flip-book/20181/63800/page/1?cover", "https://g2.publuu.com/cover.php?iid=63800&pid=20181&page=1&time=1648154058"),
+    ]
+  
+    return render_template('index.html', books=writen_books, services=offered_services, skills=top_skills, magazines = mags)
 
 
 @app.route('/post')
