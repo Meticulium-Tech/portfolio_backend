@@ -199,6 +199,9 @@ ul,li{
 
 /* toggle-button  */
 
+.flip{
+	border-radius: 2px solid #FCC200;
+}
 .book_name {
 	color: #FCC200;
 	font-weight: normal;
