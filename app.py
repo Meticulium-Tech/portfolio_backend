@@ -6,9 +6,6 @@ from models.service import Service
 from models.skill import Skill
 app = Flask(__name__)
 
-# two decorators, same function
-
-
 @app.route('/')
 def index():
     writen_books = [
